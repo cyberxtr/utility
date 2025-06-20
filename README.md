@@ -105,3 +105,9 @@ To learn how to become validator, checkout [documentation](https://docs.utnet-or
 
 The workflow and details of setup to contribute are described in [CONTRIBUTING.md](CONTRIBUTING.md), and security policy is described in [SECURITY.md](SECURITY.md).
 To propose new protocol changes or standards use [Specification & Standards repository](https://github.com/utility/UEPs).
+
+## Telegram Bot Example
+
+A minimal Telegram bot with a web-based admin panel is available in
+[`telegram_bot/`](telegram_bot/).  It demonstrates how to organize files into
+button-driven categories and broadcast messages to subscribers.

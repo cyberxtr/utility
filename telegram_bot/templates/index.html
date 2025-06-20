@@ -1,0 +1,19 @@
+<!doctype html>
+<title>Bot Admin</title>
+<h1>Categories</h1>
+<ul>
+{% for c in categories %}
+<li>{{ c[1] }}</li>
+{% endfor %}
+</ul>
+<h2>Add Category</h2>
+<form method="post" action="{{ url_for('add_category_view', token=request.args.get('token')) }}">
+<input type="text" name="name" placeholder="Category name" required>
+<input type="text" name="parent" placeholder="Parent id (optional)">
+<button type="submit">Add</button>
+</form>
+<h2>Broadcast</h2>
+<form method="post" action="{{ url_for('broadcast', token=request.args.get('token')) }}">
+<textarea name="msg" required></textarea>
+<button type="submit">Send</button>
+</form>
